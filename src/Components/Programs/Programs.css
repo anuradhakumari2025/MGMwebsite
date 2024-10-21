@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.programs {
+  margin: 50px auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.program {
+  position: relative;
+  flex-basis: 31%;
+}
+
+.caption {
+  border-radius: 10px;
+  position: absolute; /* fixed the typo here */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 15, 152, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  padding-top: 70%;
+  transition: 0.4s;
+}
+
+.caption img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.program:hover .caption {
+  opacity: 1;
+  padding-top: 0;
+}
