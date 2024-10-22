@@ -14,9 +14,14 @@ function CampusLife() {
               <CampusVidio />
             </div>
             <div className="border-2 border-violet-400 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
-              <p className="text-center font-bold text-2xl mt-4 ">Bus Service</p>
+              <p className="text-center font-bold text-2xl mt-4 ">
+                Bus Service
+              </p>
               <div className="mt-4 h-[530px]">
-                <img src="/busService.jpg" className="w-full h-full rounded-b-3xl" />
+                <img
+                  src="/busService.jpg"
+                  className="w-full h-full rounded-b-3xl"
+                />
               </div>
             </div>
 
@@ -114,31 +119,50 @@ function CampusLife() {
             <div className="border-2 border-blue-700 flex flex-col items-center rounded-3xl shadow-gray-500 shadow-xl">
               <p className="text-center font-bold text-2xl mt-8">Hostel</p>
               <div className="mt-12 h-[690px]">
-                <img src="/hostel.jpg" className="h-full w-full rounded-b-3xl"/>
+                <img
+                  src="/hostel.jpg"
+                  className="h-full w-full rounded-b-3xl"
+                />
               </div>
             </div>
             <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
               <p className="text-center font-bold text-2xl mt-4 ">Canteen</p>
               <div className="mt-6 h-[470px]">
-                <img src="/canteen.jpg" className="h-full w-full rounded-b-3xl" />
+                <img
+                  src="/canteen.jpg"
+                  className="h-full w-full rounded-b-3xl"
+                />
               </div>
             </div>
             <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
               <p className="text-center font-bold text-2xl mt-4">Library</p>
               <div className="mt-6 h-[470px]">
-                <img src="/library.jpg" className="h-full w-full rounded-b-3xl" />
+                <img
+                  src="/library.jpg"
+                  className="h-full w-full rounded-b-3xl"
+                />
               </div>
             </div>
             <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
-              <p className="text-center font-bold text-2xl mt-4">Parking Space</p>
+              <p className="text-center font-bold text-2xl mt-4">
+                Parking Space
+              </p>
               <div className="mt-6 h-[470px]">
-                <img src="/parking.jpg" className="h-full w-full rounded-b-3xl" />
+                <img
+                  src="/parking.jpg"
+                  className="h-full w-full rounded-b-3xl"
+                />
               </div>
             </div>
             <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
-              <p className="text-center font-bold text-2xl mt-4">Sport's Ground</p>
+              <p className="text-center font-bold text-2xl mt-4">
+                Sport's Ground
+              </p>
               <div className="mt-6 h-[470px]">
-                <img src="/sports.jpg" className="h-full w-full rounded-b-3xl" />
+                <img
+                  src="/sports.jpg"
+                  className="h-full w-full rounded-b-3xl"
+                />
               </div>
             </div>
           </div>

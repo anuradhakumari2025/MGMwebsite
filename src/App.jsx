@@ -9,6 +9,13 @@ import Programs from "./Components/Programs/Programs";
 import Campus from "./Components/Campus/Campus";
 import CampusLife from "./Components/CampusLife";
 import NavbarVidio from "./Components/NavbarVidio/NavbarVidio";
+import ComputerEng from "./Components/ComputerEng";
+import ItEngg from "./Components/ItEngg";
+import BiomedicalEngg from "./Components/BiomedicalEngg";
+import CivilEngg from "./Components/CivilEngg";
+import ExtcEngg from "./Components/ExtcEngg";
+import ChemicalEngg from "./Components/ChemicalEngg";
+import Mechanical from "./Components/Mechanical";
 
 function App() {
   return (
@@ -31,6 +38,7 @@ function App() {
             }
           />
           <Route path="/more-campus" element={<CampusLife />} />
+          <Route path="/comp-engg" element={<Mechanical />}/>
           {/* Add more routes for additional pages */}
         </Routes>
         <Footer />

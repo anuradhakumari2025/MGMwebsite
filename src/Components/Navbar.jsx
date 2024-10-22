@@ -2,6 +2,8 @@ import { FaAngleDown } from "react-icons/fa6";
 import { useState } from "react";
 import items from "../Constants/NavbarItems";
 import academicItems from "../Constants/AcademicsItems";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -9,12 +11,19 @@ function Navbar() {
   const handleDropdown = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+  const navigate = useNavigate();
+  
+  const handleRedirect = () => {
+    navigate('/comp-engg'); // Redirect to the new page
+  };
   return (
     <div>
       <nav className="text-lg">
         <div className="border-b-2 border-blue-700 py-2 px-10 h-20 flex items-center bg-gray-100">
-          <div className="font-semibold text-xl text-blue-800 cursor-pointer">Home</div>
+          <div className="font-semibold text-xl text-blue-800 cursor-pointer">
+          <Link to="/">Home</Link>
+                      </div>
+                      <button className="ml-5 border-2 border-blue-600 p-2 rounded-3xl" onClick={handleRedirect}>Comp</button>
           <div className="flex flex-col ml-10">
             <div className="flex gap-6 font-semibold">
               {items.map((item, index) => (
