@@ -1,4 +1,4 @@
-import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "./Campus.css";
 import gallery_1 from "/gallery-1.png";
 import gallery_2 from "/gallery-2.png";
@@ -8,6 +8,11 @@ import white_arrow from "/white-arrow.png";
 import Title from "../Title/Title";
 
 const Campus = () => {
+    const navigate = useNavigate();
+  
+    const handleRedirect = () => {
+      navigate('/more-campus'); // Redirect to the new page
+    };
   return (
     <>
         <Title title={"Campus Photos"} subTitle={"GALLERY"}/>
@@ -19,7 +24,7 @@ const Campus = () => {
           <img src={gallery_3} alt="" />
           <img src={gallery_4} alt="" />
         </div>
-        <button className="btn dark-btn">
+        <button className="btn dark-btn" onClick={handleRedirect}>
           See more here <img src={white_arrow} alt="" />
         </button>
       </div>
