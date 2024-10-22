@@ -9,19 +9,19 @@ function CampusLife() {
           <p className="text-center text-3xl font-bold px-4 py-6 text-blue-950">
             College Facilities
           </p>
-          <div className="grid grid-cols-2 border-2 border-yellow-300 gap-8 p-8">
+          <div className="grid grid-cols-2 gap-16 p-8 text-blue-900">
             <div className="col-span-2 px-8">
               <CampusVidio />
             </div>
-            <div className="border-2 border-violet-400 flex items-center flex-col h-auto">
+            <div className="border-2 border-violet-400 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
               <p className="text-center font-bold text-2xl mt-4 ">Bus Service</p>
-              <div className="mt-4 border-2 border-yellow-200 h-[450px]">
-                <img src="/busService.jpg" className="w-full h-full" />
+              <div className="mt-4 h-[530px]">
+                <img src="/busService.jpg" className="w-full h-full rounded-b-3xl" />
               </div>
             </div>
 
             <div className="p-4 text-lg font-semibold">
-              <p>
+              <p className="mt-20 px-4">
                 MGMCET is housed in a spacious Campus near Panvel at the
                 junction of NH-4 and Bombay-Pune Expressway. For the convenience
                 of our students, MGMCET provides bus services to college
@@ -30,25 +30,25 @@ function CampusLife() {
                 girls. And above all, these bus services are provided free for
                 the students of MGMCET
               </p>
-              <div className="flex justify-center items-center">
-                <table className="border-2 border-black mt-4 w-80 h-40 text-center">
+              <div className="flex justify-center items-center mt-20">
+                <table className="border-2 border-blue-700 mt-4 w-80 h-40 text-center shadow-gray-500 shadow-xl">
                   <tr>
-                    <th className="border-2 border-black">Bus During</th>
-                    <th className="border-2 border-black">Time</th>
+                    <th className="border-2 border-blue-700">Bus During</th>
+                    <th className="border-2 border-blue-700">Time</th>
                   </tr>
                   <tr>
-                    <td className="border-2 border-black">Morning</td>
-                    <td className="border-2 border-black">08:00 - 10:00</td>
+                    <td className="border-2 border-blue-700">Morning</td>
+                    <td className="border-2 border-blue-700">08:00 - 10:00</td>
                   </tr>
                   <tr>
-                    <td className="border-2 border-black">Afternoon</td>
-                    <td className="border-2 border-black">03:30 - 06:00</td>
+                    <td className="border-2 border-blue-700">Afternoon</td>
+                    <td className="border-2 border-blue-700">03:30 - 06:00</td>
                   </tr>
                 </table>
               </div>
             </div>
             <div className=" px-6">
-              <ol className="list-decimal pl-5 p-4 text-lg font-semibold">
+              <ol className="list-decimal pl-5 p-4 text-lg font-semibold shadow-gray-500 shadow-md rounded-lg">
                 <li> MGMCET provides hostel facility for girls and boys.</li>
                 <li>
                   {" "}
@@ -61,7 +61,7 @@ function CampusLife() {
                   department size.
                 </li>
               </ol>
-              <div className="border-2 border-black text-lg font-semibold rounded-xl">
+              <div className="border-2 border-blue-700 text-lg font-semibold rounded-xl shadow-gray-500 shadow-xl mt-2">
                 <p className="text-center p-4 text-2xl font-bold">
                   Hostel Rules
                 </p>
@@ -111,34 +111,34 @@ function CampusLife() {
                 </ol>
               </div>
             </div>
-            <div className="border-2 border-violet-400 flex flex-col items-center ">
-              <p className="text-center font-bold text-2xl mt-8">Hostel Life</p>
-              <div className="mt-24 h-[450px]">
-                <img src="/hostel.jpg" className="h-full w-full"/>
+            <div className="border-2 border-blue-700 flex flex-col items-center rounded-3xl shadow-gray-500 shadow-xl">
+              <p className="text-center font-bold text-2xl mt-8">Hostel</p>
+              <div className="mt-12 h-[690px]">
+                <img src="/hostel.jpg" className="h-full w-full rounded-b-3xl"/>
               </div>
             </div>
-            <div className="border-2 border-violet-400 flex items-center flex-col h-auto">
-              <p className="text-center font-bold text-2xl ">Canteen</p>
-              <div className="mt-8 h-[400px]">
-                <img src="/canteen.jpg" className="w-full h-full" />
+            <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
+              <p className="text-center font-bold text-2xl mt-4 ">Canteen</p>
+              <div className="mt-6 h-[470px]">
+                <img src="/canteen.jpg" className="h-full w-full rounded-b-3xl" />
               </div>
             </div>
-            <div className="border-2 border-violet-400 flex items-center flex-col h-auto">
-              <p className="text-center font-bold text-2xl ">Library</p>
-              <div className="mt-8">
-                <img src="/mgm-logo.jpeg" className="w-[200px] h-[200px]" />
+            <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
+              <p className="text-center font-bold text-2xl mt-4">Library</p>
+              <div className="mt-6 h-[470px]">
+                <img src="/library.jpg" className="h-full w-full rounded-b-3xl" />
               </div>
             </div>
-            <div className="border-2 border-violet-400 flex items-center flex-col h-auto">
-              <p className="text-center font-bold text-2xl ">Parking Space</p>
-              <div className="mt-8">
-                <img src="/parking.jpg" className="w-full h-[200px]" />
+            <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
+              <p className="text-center font-bold text-2xl mt-4">Parking Space</p>
+              <div className="mt-6 h-[470px]">
+                <img src="/parking.jpg" className="h-full w-full rounded-b-3xl" />
               </div>
             </div>
-            <div className="border-2 border-violet-400 flex items-center flex-col h-auto">
-              <p className="text-center font-bold text-2xl ">Sport's Ground</p>
-              <div className="mt-8">
-                <img src="/mgm-logo.jpeg" className="w-[200px] h-[200px]" />
+            <div className="border-2 border-blue-700 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
+              <p className="text-center font-bold text-2xl mt-4">Sport's Ground</p>
+              <div className="mt-6 h-[470px]">
+                <img src="/sports.jpg" className="h-full w-full rounded-b-3xl" />
               </div>
             </div>
           </div>
