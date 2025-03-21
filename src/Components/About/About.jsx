@@ -6,21 +6,59 @@ import play_icon from "/play-icon.png";
 const About = () => {
   return (
     <>
-      <div className="about">
-        <div className="about-left">
+      <h3 className="font-[600] text-[26px] text-center text-[#212ea0]">
+        ABOUT US
+      </h3>
+      <div className="max-w-7xl mx-auto w-full px-16 mb-8">
+        <div className="lg:about-left hidden">
           <img src={about_img} className="about-img" alt="" />
           <img src={play_icon} className="play-icon" alt="" />
         </div>
         <div className="about-right">
-          <h3>ABOUT US</h3>
-          <div><h2>Nurturing Tomorrow's Leaders Today</h2></div>
-          <p>
-          MGM's College of Engineering and Technology(MGMCET) is governed by Mahatma Gandhi Mission, a Charitable Trust Act 1950 and Societies Regulation Act 1860. Since its inception in 1982, Mahatma Gandhi Mission has developed into an excellent educational group and is totally committed to human resource development. MGM is now a chain of Engineering, Medical, Nursing, Management, Dental, Physiotherapy, Science, Journalism and Fine Arts spread over four educational centres - Navi Mumbai , Nanded, Aurangabad and Noida. In continuation of its proud tradition of enriching the human resource needs of the country, the Mission has set up in 1986, our institute MGM’s College of Engineering & Technology, Kamothe, Navi Mumbai.The objective of the institution is to impart value based quality education by combining academics with exposure to industry. With this view in mind it provides state-of-the art infrastructure facilities & academic resources to its students.
+          <div>
+            <h2 className="text-[#000f38] text-[35px] font-[700]">
+              Nurturing Tomorrow's Leaders Today
+            </h2>
+          </div>
+          <p className="text-jusitfy my-5">
+            MGM's College of Engineering and Technology(MGMCET) is governed by
+            Mahatma Gandhi Mission, a Charitable Trust Act 1950 and Societies
+            Regulation Act 1860. Since its inception in 1982, Mahatma Gandhi
+            Mission has developed into an excellent educational group and is
+            totally committed to human resource development. MGM is now a chain
+            of Engineering, Medical, Nursing, Management, Dental, Physiotherapy,
+            Science, Journalism and Fine Arts spread over four educational
+            centres - Navi Mumbai , Nanded, Aurangabad and Noida. In
+            continuation of its proud tradition of enriching the human resource
+            needs of the country, the Mission has set up in 1986, our institute
+            MGM’s College of Engineering & Technology, Kamothe, Navi Mumbai.The
+            objective of the institution is to impart value based quality
+            education by combining academics with exposure to industry. With
+            this view in mind it provides state-of-the art infrastructure
+            facilities & academic resources to its students.
           </p>
-          <p>
-          College is affiliated to University of Mumbai and approved by AICTE, New Delhi. MGMCET is awarded with ISO-9001-2000 Certification by RINA for providing technical education in engineering field as per the guidelines of University of Mumbai. The institute is one of the few engineering colleges to achieve this international standard for implementing and maintaining Quality Management System. The four courses viz. Computer, Electronics & Telecommunications, Biomedical & Civil are accredited by NBA of AICTE. MGMCET is housed in a spacious Campus near Panvel at the junction of NH-4 and Mumbai-Pune Expressway but in a modern style of Architecture, best suited to secure the requisite effect of simplicity & dignity, which should be associated with the technological institute. It maintains picturesque and lush green gardens around to provide a soothing atmosphere conducive to learning. Admission to the institute is as per the conditions laid down by Directorate of Technical Education, Maharashtra State.
+          <p className="hidden lg:block">
+            College is affiliated to University of Mumbai and approved by AICTE,
+            New Delhi. MGMCET is awarded with ISO-9001-2000 Certification by
+            RINA for providing technical education in engineering field as per
+            the guidelines of University of Mumbai. The institute is one of the
+            few engineering colleges to achieve this international standard for
+            implementing and maintaining Quality Management System. The four
+            courses viz. Computer, Electronics & Telecommunications, Biomedical
+            & Civil are accredited by NBA of AICTE. MGMCET is housed in a
+            spacious Campus near Panvel at the junction of NH-4 and Mumbai-Pune
+            Expressway but in a modern style of Architecture, best suited to
+            secure the requisite effect of simplicity & dignity, which should be
+            associated with the technological institute. It maintains
+            picturesque and lush green gardens around to provide a soothing
+            atmosphere conducive to learning. Admission to the institute is as
+            per the conditions laid down by Directorate of Technical Education,
+            Maharashtra State.
           </p>
         </div>
+        <a className="cursor-pointer hover:text-blue-800 font-normal text-lg text-blue-500 duration-200">
+          Read More...
+        </a>
       </div>
     </>
   );

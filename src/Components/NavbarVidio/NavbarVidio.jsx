@@ -5,7 +5,7 @@ function NavbarVidio() {
   return (
     <>
       {/* Video Section */}
-      <div className="relative h-screen">
+      <div className="relative hidden lg:block h-screen">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           autoPlay

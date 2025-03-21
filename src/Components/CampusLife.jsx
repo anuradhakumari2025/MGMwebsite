@@ -5,23 +5,18 @@ function CampusLife() {
   return (
     <>
       <main>
-        <div>
-          <p className="text-center text-3xl font-bold px-4 py-6 text-blue-950">
-            College Facilities
-          </p>
-          <div className="grid grid-cols-2 gap-16 p-8 text-blue-900">
-            <div className="col-span-2 px-8">
-              <CampusVidio />
-            </div>
-            <div className="border-2 border-violet-400 flex items-center flex-col h-auto rounded-3xl shadow-gray-500 shadow-xl">
-              <p className="text-center font-bold text-2xl mt-4 ">
+        <p className="text-center text-3xl font-bold px-4 py-6 text-blue-950">
+          College Facilities
+        </p>
+        <CampusVidio />
+        <div className="w-full max-w-6xl mx-auto my-20">
+          <div className="grid grid-cols-2 gap-[80px] text-blue-900">
+            <div className="border-2 border-violet-400 flex items-center flex-col rounded-3xl shadow-gray-500 shadow-xl">
+              <p className="text-center font-bold text-2xl mb-4 mt-8 ">
                 Bus Service
               </p>
-              <div className="mt-4 h-[530px]">
-                <img
-                  src="/busService.jpg"
-                  className="w-full h-full rounded-b-3xl"
-                />
+              <div className="mt-12 h-full">
+                <img src="/busService.jpg" className="h-full rounded-b-3xl" />
               </div>
             </div>
 
@@ -52,16 +47,14 @@ function CampusLife() {
                 </table>
               </div>
             </div>
-            <div className=" px-6">
-              <ol className="list-decimal pl-5 p-4 text-lg font-semibold shadow-gray-500 shadow-md rounded-lg">
+            <div className=" px-6 ">
+              <ol className="border-2 border-blue-700 list-decimal pl-[40px] p-4 text-lg font-semibold shadow-gray-500 shadow-md rounded-lg">
                 <li> MGMCET provides hostel facility for girls and boys.</li>
                 <li>
-                  {" "}
                   The hostel facility is granted to the students of the
                   University strictly on the basis of merit.
                 </li>
                 <li>
-                  {" "}
                   The number of seats for each department depends on the
                   department size.
                 </li>
@@ -70,7 +63,7 @@ function CampusLife() {
                 <p className="text-center p-4 text-2xl font-bold">
                   Hostel Rules
                 </p>
-                <ol className="list-decimal pl-6 space-y-2">
+                <ol className="list-decimal pl-[40px] pb-4 space-y-2">
                   <li>
                     During my stay in the Hostel, I will not disturb my
                     neighbours or others by talking loudly or creating nuisance.
@@ -118,7 +111,7 @@ function CampusLife() {
             </div>
             <div className="border-2 border-blue-700 flex flex-col items-center rounded-3xl shadow-gray-500 shadow-xl">
               <p className="text-center font-bold text-2xl mt-8">Hostel</p>
-              <div className="mt-12 h-[690px]">
+              <div className="mt-56 h-[600px] bg-black">
                 <img
                   src="/hostel.jpg"
                   className="h-full w-full rounded-b-3xl"

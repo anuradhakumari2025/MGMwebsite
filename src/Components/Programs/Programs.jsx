@@ -11,10 +11,9 @@ import Title from "../Title/Title";
 const Programs = () => {
   return (
     <>
-        <Title title={"What We Offer"} subTitle={"OUR PROGRAM"}/>
-
-      <div className="programs">
-        <div className="program">
+      <Title title={"What We Offer"} subTitle={"OUR PROGRAM"} />
+      <div className="programs bg-white">
+        <div className="program bg-white">
           <img src={program1} alt="" />
           <div className="caption">
             <img src={program_icon_1} alt="" />
