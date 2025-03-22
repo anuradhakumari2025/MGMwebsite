@@ -3,19 +3,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Head from "./Components/Head";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Testomonial from "./Components/Testomonial";
-import About from "./Components/About/About";
-import Programs from "./Components/Programs/Programs";
-import Campus from "./Components/Campus/Campus";
 import CampusLife from "./Components/CampusLife";
-import NavbarVidio from "./Components/NavbarVidio/NavbarVidio";
-import ComputerEng from "./Components/ComputerEng";
-import ItEngg from "./Components/ItEngg";
-import BiomedicalEngg from "./Components/BiomedicalEngg";
-import CivilEngg from "./Components/CivilEngg";
-import ExtcEngg from "./Components/ExtcEngg";
-import ChemicalEngg from "./Components/ChemicalEngg";
-import Mechanical from "./Components/Mechanical";
+import Departments from "./Components/Departments/Departments";
+import ComputerEng from "./Components/Departments/Undergraduate/ComputerEng";
+import CivilEngg from "./Components/Departments/Undergraduate/CivilEngg";
+import Mechanical from "./Components/Departments/Undergraduate/Mechanical";
+import ElectricalEng from "./Components/Departments/Undergraduate/ElectricalEng";
+import BiomedicalEngg from "./Components/Departments/Undergraduate/BiomedicalEngg";
+import ItEngg from "./Components/Departments/Undergraduate/ItEngg";
+import ChemicalEngg from "./Components/Departments/Undergraduate/ChemicalEngg";
+import ExtcEngg from "./Components/Departments/Undergraduate/ExtcEngg";
+import Home from "./Components/Home";
+import ChairmanMsg from "./Components/About/ChairmanMsg";
+import VicePrincipalMsg from "./Components/About/VicePrincipalMsg";
+import TrusteeMsg from "./Components/About/TrusteeMsg";
+import VisionMission from "./Components/About/VisionMission";
+import CodeOfConduct from "./Components/About/CodeOfConduct";
 
 function App() {
   return (
@@ -25,21 +28,52 @@ function App() {
         <Navbar />
         {/* Main content where routes will change */}
         <Routes>
+          <Route path="/" element={<Home />} />
+
+          {/* About */}
+          <Route path="/about/chairman-msg" element={<ChairmanMsg />} />
           <Route
-            path="/"
-            element={
-              <>
-                <NavbarVidio />
-                <Programs />
-                <About />
-                <Campus />
-                <Testomonial />
-              </>
-            }
+            path="/about/vice-principal-msg"
+            element={<VicePrincipalMsg />}
           />
-          <Route path="/more-campus" element={<CampusLife />} />
-          <Route path="/comp-engg" element={<Mechanical />}/>
-          {/* Add more routes for additional pages */}
+          <Route path="/about/trustee-msg" element={<TrusteeMsg />} />
+          <Route path="/about/vision-mission" element={<VisionMission />} />
+          <Route path="/about/code-of-conduct" element={<CodeOfConduct />} />
+
+          {/* Departments */}
+          <Route path="/departments" element={<Departments />} />
+          <Route
+            path="/departments/undergraduate/computer"
+            element={<ComputerEng />}
+          />
+          <Route
+            path="/departments/undergraduate/civil"
+            element={<CivilEngg />}
+          />
+          <Route
+            path="/departments/undergraduate/mechanical"
+            element={<Mechanical />}
+          />
+          <Route
+            path="/departments/undergraduate/electrical"
+            element={<ElectricalEng />}
+          />
+          <Route
+            path="/departments/undergraduate/biomedical"
+            element={<BiomedicalEngg />}
+          />
+          <Route path="/departments/undergraduate/it" element={<ItEngg />} />
+          <Route
+            path="/departments/undergraduate/chemical"
+            element={<ChemicalEngg />}
+          />
+          <Route
+            path="/departments/undergraduate/extc"
+            element={<ExtcEngg />}
+          />
+
+          {/* Campus */}
+          <Route path="/campus" element={<CampusLife />} />
         </Routes>
         <Footer />
       </>

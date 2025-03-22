@@ -1,4 +1,3 @@
-import React from "react";
 import EngineeringTemplate from "./EngineeringTemplate";
 
 function ComputerEng() {

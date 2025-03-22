@@ -15,7 +15,7 @@ body {
 
 @layer components {
   .sub-menu {
-    @apply z-50 text-white  absolute top-[11.5rem] space-y-4 py-[18px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-blue-700;
+    @apply z-50 text-white  absolute top-[11.5rem] space-y-4 py-[18px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-blue-700/50;
   }
 }
 

@@ -1,7 +1,7 @@
 function Head() {
   return (
     <header className="pt-6 py-2 px-12 bg-white">
-      <div className="flex items-center justify-center gap-12  ">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-12 gap-5 ">
         {/* <div className="text-center "> */}
         <img src="/mgm-logo.jpeg" className="h-[90px] w-[90px]" />
         <div className="text-center">
@@ -10,8 +10,8 @@ function Head() {
           </h1>
           <h2 className="text-xl font-semibold mt-2">Kamothe,Navi Mumbai</h2>
           <h4 className="text-lg font-normal mt-1">
-            Approved by AICTE, Recognized by Govt. Of Maharashtra & Affliated to
-            Unoversity of Mumbai
+            Approved by AICTE, Recognized by Govt. Of Maharashtra & Affiliated to
+            University of Mumbai
           </h4>
         </div>
         {/* </div> */}

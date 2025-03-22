@@ -76,7 +76,9 @@ function Navbar() {
           <nav className=" px-10 lg:px-2  flex items-center justify-between lg:justify-center text-blue-800 text-xl lg:text-lg gap-6 font-semibold lg:font-medium w-full max-w-7xl mx-auto">
             <div className="flex-center gap-x-3 z-[999] relative">
               {/* <img src='/mgm-logo.jpeg' alt="" className="size-8" /> */}
-              <h3 className="cursor-pointer">Home</h3>
+              <Link to='/'>
+                <h3 className="cursor-pointer">Home</h3>
+              </Link>
             </div>
 
             {/* Desktop Menu */}
@@ -90,12 +92,12 @@ function Navbar() {
 
             {/* Mobile Menu */}
             <div className="lg:hidden">
-              <MobMenu Menus={Menus}/>
+              <MobMenu Menus={Menus} />
             </div>
           </nav>
         </header>
       </div>
-      <hr className="h-8 lg:h-2"/>
+      {/* <hr className="h-8 lg:h-2"/> */}
     </>
   );
 }

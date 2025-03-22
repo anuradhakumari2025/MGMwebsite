@@ -4,6 +4,7 @@ import CampusVidio from "./CampusVidio/CampusVidio";
 function CampusLife() {
   return (
     <>
+      <hr className="h-8 lg:h-2" />
       <main>
         <p className="text-center text-3xl font-bold px-4 py-6 text-blue-950">
           College Facilities

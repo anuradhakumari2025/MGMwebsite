@@ -2,6 +2,7 @@ import React from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function DesktopMenu({ menu }) {
   const hasSubMenu = menu?.subMenu?.length > 0;
@@ -41,12 +42,14 @@ function DesktopMenu({ menu }) {
       onHoverEnd={toggleHoverMenu}
       key={menu.name}
     >
-      <span className="flex-center gap-1  hover:bg-white cursor-pointer px-3 py-1 rounded-xl">
+      <Link 
+      to={menu.path || "#"} // Ensure path exists
+       className="flex-center gap-1  hover:bg-white cursor-pointer px-3 py-1 rounded-xl">
         {menu.name}
         {hasSubMenu && (
           <FaAngleDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
         )}
-      </span>
+      </Link>
       {hasSubMenu && (
         <motion.div
           className="sub-menu"
@@ -66,10 +69,10 @@ function DesktopMenu({ menu }) {
             {menu?.subMenu?.map((subMenu, idx) => (
               <div key={idx} className="cursor-pointer">
                 <div className="group/menubox">
-                  {/* <div>{subMenu?.icon && <subMenu.icon />}</div> */}
                   <div className="group-hover/menubox:bg-white hover:text-black px-6 py-2 duration-300">
-                    <h6>{subMenu?.name}</h6>
-                    {/* <p>{subMenu?.desc}</p> */}
+                  <Link to={subMenu.path || "#"}>
+                  <h6>{subMenu?.name}</h6>
+                  </Link>
                   </div>
                 </div>
               </div>

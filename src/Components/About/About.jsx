@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 import about_img from "/about.png";
 import play_icon from "/play-icon.png";
 
 const About = () => {
+  const [showMore, setShowMore] = useState(false); // State to toggle visibility
+
+  const handleReadMore = () => {
+    setShowMore(!showMore); // Toggle the state
+  };
   return (
     <>
       <h3 className="font-[600] text-[26px] text-center text-[#212ea0]">
@@ -37,27 +42,33 @@ const About = () => {
             this view in mind it provides state-of-the art infrastructure
             facilities & academic resources to its students.
           </p>
-          <p className="hidden lg:block">
-            College is affiliated to University of Mumbai and approved by AICTE,
-            New Delhi. MGMCET is awarded with ISO-9001-2000 Certification by
-            RINA for providing technical education in engineering field as per
-            the guidelines of University of Mumbai. The institute is one of the
-            few engineering colleges to achieve this international standard for
-            implementing and maintaining Quality Management System. The four
-            courses viz. Computer, Electronics & Telecommunications, Biomedical
-            & Civil are accredited by NBA of AICTE. MGMCET is housed in a
-            spacious Campus near Panvel at the junction of NH-4 and Mumbai-Pune
-            Expressway but in a modern style of Architecture, best suited to
-            secure the requisite effect of simplicity & dignity, which should be
-            associated with the technological institute. It maintains
-            picturesque and lush green gardens around to provide a soothing
-            atmosphere conducive to learning. Admission to the institute is as
-            per the conditions laid down by Directorate of Technical Education,
-            Maharashtra State.
-          </p>
+          {showMore && (
+            <p className="hidden lg:block">
+              College is affiliated to University of Mumbai and approved by
+              AICTE, New Delhi. MGMCET is awarded with ISO-9001-2000
+              Certification by RINA for providing technical education in
+              engineering field as per the guidelines of University of Mumbai.
+              The institute is one of the few engineering colleges to achieve
+              this international standard for implementing and maintaining
+              Quality Management System. The four courses viz. Computer,
+              Electronics & Telecommunications, Biomedical & Civil are
+              accredited by NBA of AICTE. MGMCET is housed in a spacious Campus
+              near Panvel at the junction of NH-4 and Mumbai-Pune Expressway but
+              in a modern style of Architecture, best suited to secure the
+              requisite effect of simplicity & dignity, which should be
+              associated with the technological institute. It maintains
+              picturesque and lush green gardens around to provide a soothing
+              atmosphere conducive to learning. Admission to the institute is as
+              per the conditions laid down by Directorate of Technical
+              Education, Maharashtra State.
+            </p>
+          )}
         </div>
-        <a className="cursor-pointer hover:text-blue-800 font-normal text-lg text-blue-500 duration-200">
-          Read More...
+        <a
+          className="cursor-pointer hover:text-blue-800 font-normal text-lg text-blue-500 duration-200"
+          onClick={handleReadMore} // Add click handler
+        >
+          {showMore ? "Read Less..." : "Read More..."}
         </a>
       </div>
     </>

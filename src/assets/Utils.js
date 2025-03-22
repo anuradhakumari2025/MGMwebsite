@@ -1,153 +1,151 @@
 export const Menus = [
   {
     name: "About",
+    path:'/about',
     subMenuHeading: ["Design", "Scale"],
     subMenu: [
       {
         name: "Chairman's Message",
-        // desc: "Responsive design",
-        // icon: PanelsTopLeft,
+        path:'/about/chairman-msg',
+       
       },
       {
         name: "Trustee's Message",
-        // desc: "Site control",
-        // icon: Bolt,
+        path:'/about/trustee-msg',
       },
       {
         name: "Vice Principal's Message",
-        // desc: "Link pages",
-        // icon: PanelTop,
+        path:'/about/vice-principal-msg',
       },
       {
         name: "Institute Vision & Mission",
-        // desc: "Management content",
-        // icon: Database,
+        path:'/about/vision-mission',
       },
+      {
+        name:'Code Of Conduct',
+        path:'/about/code-of-conduct'
+      }
     ],
     gridCols: 4,
   },
   {
     name: "Academics",
+    path:'/academics',
     subMenu: [
       {
         name: "Academic Calendar",
-        // desc: "Center",
-        // icon: CircleHelp,
+        path:'/academics/calendar',
       },
       {
         name: "Commities",
-        // desc: "Project help",
-        // icon: MessageCircle,
+       path:'/academics/commities',
       },
       {
         name: "Achievements",
-        // desc: "Urgent issues",
-        // icon: TriangleAlert,
+        path:'/academics/achievements',
       },
     ],
     gridCols: 1,
   },
   {
     name: "Departments",
+    path:'/departments',
     subMenuHeading: ["Get started", "Programs", "Recent"],
     subMenu: [
       {
         name: "UnderGraduate",
-        // desc: "Browse templates",
-        // icon: ShoppingBag,
+        path:'/departments',
       },
       {
         name: "PostGraduate",
-        // desc: "Upcoming events",
-        // icon: MapPin,
+        path:'/departments',
       },
       {
         name: "PHD Courses",
-        // desc: "Changelog",
-        // icon: BellDot,
+        path:'/departments',
       },
      
     ],
   },
   {
     name: "Campus",
-    subMenuHeading: ["Get started", "Programs", "Recent"],
-    subMenu: [
-      {
-        name: "Markplace",
-        desc: "Browse templates",
-        // icon: ShoppingBag,
-      },
-      {
-        name: "Meetups",
-        desc: "Upcoming events",
-        // icon: MapPin,
-      },
-      {
-        name: "Updates",
-        desc: "Changelog",
-        // icon: BellDot,
-      },
-      {
-        name: "Academy",
-        desc: "Watch lessions",
-        // icon: Play,
-      },
-      {
-        name: "Blog",
-        desc: "Posts",
-        // icon: BookOpenText,
-      },
-      {
-        name: "Figma",
-        desc: "Plugin",
-        // icon: Figma,
-      },
-      {
-        name: "Experts",
-        desc: "Jobs",
-        // icon: BriefcaseBusiness,
-      },
-      {
-        name: "Gallery",
-        desc: "Images",
-        // icon: Images,
-      },
-    ],
-    gridCols: 3,
+    path:'/campus',
+    // subMenuHeading: ["Get started", "Programs", "Recent"],
+    // subMenu: [
+    //   {
+    //     name: "Markplace",
+    //     desc: "Browse templates",
+    //     // icon: ShoppingBag,
+    //   },
+    //   {
+    //     name: "Meetups",
+    //     desc: "Upcoming events",
+    //     // icon: MapPin,
+    //   },
+    //   {
+    //     name: "Updates",
+    //     desc: "Changelog",
+    //     // icon: BellDot,
+    //   },
+    //   {
+    //     name: "Academy",
+    //     desc: "Watch lessions",
+    //     // icon: Play,
+    //   },
+    //   {
+    //     name: "Blog",
+    //     desc: "Posts",
+    //     // icon: BookOpenText,
+    //   },
+    //   {
+    //     name: "Figma",
+    //     desc: "Plugin",
+    //     // icon: Figma,
+    //   },
+    //   {
+    //     name: "Experts",
+    //     desc: "Jobs",
+    //     // icon: BriefcaseBusiness,
+    //   },
+    //   {
+    //     name: "Gallery",
+    //     desc: "Images",
+    //     // icon: Images,
+    //   },
+    // ],
+    // gridCols: 3,
   },
  
   {
     name: "Admission",
+    path:'/admission',
     subMenuHeading: ["Overview", "Features"],
     subMenu: [
       {
         name: "Enterprise",
-        // desc: "Overview",
-        // icon: ShieldPlus,
+       
       },
       {
         name: "Collaboration",
-        // desc: "Design together",
-        // icon: Users,
+        
       },
       {
         name: "Customers",
-        // desc: "Stories",
-        // icon: Dessert,
+       
       },
       {
         name: "Security",
-        // desc: "Your site secured",
-        // icon: Lock,
+        
       },
     ],
     gridCols: 2,
   },
   {
     name: "Placements",
+    path:'/placements',
   },
   {
     name: "Contact",
+    path:'/contact',
   },
 ];
