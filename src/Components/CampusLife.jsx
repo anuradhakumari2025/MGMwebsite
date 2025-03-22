@@ -9,8 +9,8 @@ function CampusLife() {
         <p className="text-center text-3xl font-bold px-4 py-6 text-blue-950">
           College Facilities
         </p>
-        <CampusVidio />
-        <div className="w-full max-w-6xl mx-auto my-20">
+        {/* <CampusVidio /> */}
+        <div className="w-full max-w-6xl mx-auto mb-20 mt-8">
           <div className="grid grid-cols-2 gap-[80px] text-blue-900">
             <div className="border-2 border-violet-400 flex items-center flex-col rounded-3xl shadow-gray-500 shadow-xl">
               <p className="text-center font-bold text-2xl mb-4 mt-8 ">

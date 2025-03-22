@@ -19,6 +19,8 @@ import VicePrincipalMsg from "./Components/About/VicePrincipalMsg";
 import TrusteeMsg from "./Components/About/TrusteeMsg";
 import VisionMission from "./Components/About/VisionMission";
 import CodeOfConduct from "./Components/About/CodeOfConduct";
+import StudentActivity from "./Components/StudentActivity";
+import Alumni from "./Components/Alumni";
 
 function App() {
   return (
@@ -74,6 +76,12 @@ function App() {
 
           {/* Campus */}
           <Route path="/campus" element={<CampusLife />} />
+
+          {/* Students Activity */}
+          <Route path="/students-activity" element={<StudentActivity />} />
+
+          {/* Alumni */}
+          <Route path="/alumni" element={<Alumni />} />
         </Routes>
         <Footer />
       </>

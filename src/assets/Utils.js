@@ -143,6 +143,14 @@ export const Menus = [
   {
     name: "Placements",
     path:'/placements',
+  }, 
+  {
+    name:'Students Activity',
+    path:'/students-activity'
+  },
+  {
+    name:'Alumni',
+    path:'/alumni'
   },
   {
     name: "Contact",
