@@ -38,7 +38,7 @@ function Departments() {
                 </Link>
               </li>
               <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/electrical">
+                <Link to="/departments/undergraduate/extc">
                   Electronics and Telecommunication Engineering
                 </Link>
               </li>

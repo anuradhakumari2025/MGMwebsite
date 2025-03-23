@@ -119,7 +119,6 @@ export const Menus = [
   {
     name: "Admission",
     path:'/admission',
-    subMenuHeading: ["Overview", "Features"],
     subMenu: [
       {
         name: "Enterprise",
@@ -129,16 +128,16 @@ export const Menus = [
         name: "Collaboration",
         
       },
-      {
-        name: "Customers",
+      // {
+      //   name: "Customers",
        
-      },
-      {
-        name: "Security",
+      // },
+      // {
+      //   name: "Security",
         
-      },
+      // },
     ],
-    gridCols: 2,
+    gridCols: 4,
   },
   {
     name: "Placements",

@@ -29,7 +29,7 @@ function Testimonial() {
         <FaArrowLeft className="w-full h-full p-2 text-white " />
         </div>
       </button>
-      <div className="flex gap-10 p-6">
+      <div className="flex flex-col lg:flex-row gap-10 p-6">
         {testimonials.slice(currentIndex, currentIndex + 3).map((testimonial) => (
           <div key={testimonial.id} className="testimonial-card border p-4 rounded-lg shadow-lg max-w-xs">
             <h3 className="font-semibold text-blue-800 text-xl">{testimonial.name}</h3>
