@@ -21,7 +21,7 @@ const About = () => {
         </div>
         <div className="about-right">
           <div>
-            <h2 className="text-[#000f38] text-[35px] font-[700]">
+            <h2 className="text-[#000f38] lg:text-[35px] text-[25px] font-[700]">
               Nurturing Tomorrow's Leaders Today
             </h2>
           </div>

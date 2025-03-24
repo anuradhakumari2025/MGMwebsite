@@ -134,6 +134,7 @@ import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
 
+
 export default class NavbarVidio extends Component {
   state = {
     goToSlide: 0,
@@ -168,7 +169,9 @@ export default class NavbarVidio extends Component {
 
   render() {
     return (
-      <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
+    <>
+    <hr/>
+      <div className="max-w-5xl h-[500px] mx-auto px-8 py-8">
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}
@@ -176,6 +179,8 @@ export default class NavbarVidio extends Component {
           animationConfig={this.state.config}
         />
       </div>
+      <hr/>
+    </>
     );
   }
 }

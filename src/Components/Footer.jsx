@@ -18,10 +18,10 @@ function Footer() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-  
+
     try {
       await emailjs.send(
-        "service_b207y2p",  // Service ID
+        "service_b207y2p", // Service ID
         "template_segw1d5", // Template ID
         {
           to_email: form.email,
@@ -30,28 +30,30 @@ function Footer() {
         },
         "wopU0Mqv55bJMDWwa" // Public Key
       );
-  
+
       alert("Message sent successfully!");
       setForm({ name: "", email: "", message: "" }); // Reset form after sending
     } catch (error) {
       console.error("Email sending failed:", error);
       alert("Failed to send message. Please try again later.");
     }
-  
+
     setLoading(false);
   };
-  
+
   return (
     <footer>
       <div className="">
-        <div className=" bg-gray-900 text-white flex p-4 py-8 justify-center ">
-          <div className="w-1/4">
-            <div className="flex justify-center items-center flex-col mt-44">
+        <div className=" bg-gray-900 text-white flex flex-col lg:flex-row p-4 py-8 justify-center ">
+          <div className="lg:w-1/4 w-full ">
+            <div className="flex justify-center items-center flex-col lg:mt-44 ">
               <div className="my-2">
                 <img src="/mgm-logo.png" className="w-[50px] h-[50px]" />
               </div>
               <div className="text-center text-lg flex flex-col space-y-2">
-                <p className=" text-lg"><b>Mahatma Gandhi College of Engineering and Technology</b></p>
+                <p className=" text-lg">
+                  <b>Mahatma Gandhi College of Engineering and Technology</b>
+                </p>
                 <p>Kamothe,Navi Mumbai</p>
                 <div className="flex justify-center items-center gap-2">
                   <IoCall />
@@ -69,57 +71,49 @@ function Footer() {
                  </a>
                 </div> */}
                 <div className="flex items-center justify-center gap-5">
-  {/* Location Icon - Appears First */}
-  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
-    <a href="https://maps.app.goo.gl/KESPj3FVT5BEGtJY6" target="_blank" rel="noopener noreferrer">
-      <FaLocationDot />
-    </a>
-  </div>
+                  {/* Location Icon - Appears First */}
+                  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
+                    <a
+                      href="https://maps.app.goo.gl/KESPj3FVT5BEGtJY6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLocationDot />
+                    </a>
+                  </div>
 
-  {/* Twitter Icon */}
-  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
-    <a href="#" target="_blank" rel="noopener noreferrer">
-      <FaXTwitter />
-    </a>
-  </div>
+                  {/* Twitter Icon */}
+                  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <FaXTwitter />
+                    </a>
+                  </div>
 
-  {/* Instagram Icon */}
-  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
-    <a href="#" target="_blank" rel="noopener noreferrer">
-      <BsInstagram />
-    </a>
-  </div>
+                  {/* Instagram Icon */}
+                  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <BsInstagram />
+                    </a>
+                  </div>
 
-  {/* Facebook Icon */}
-  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
-    <a href="#" target="_blank" rel="noopener noreferrer">
-      <FaFacebookF />
-    </a>
-  </div>
-</div>
-
+                  {/* Facebook Icon */}
+                  <div className="border-2 border-white p-3 mt-5 rounded-full w-12 h-12 flex items-center justify-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <FaFacebookF />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex w-1/2 p-2 px-10 ml-8 justify-center">
-            {/* <div className="text-gray-400 space-y-4">
-              <p className="font-semibold text-white border-b-2 border-red-600">Quick Links</p>
-              <p>Departments</p>
-              <p>Centres & CoEs</p>
-              <p>Anti-Ragging Policy</p>
-              <p>Office of Carrier Services</p>
-            </div>
-            <div className="text-gray-400 ml-10 space-y-4">
-              <p className="font-semibold text-white border-b-2 border-red-600">Explore</p>
-              <p>Rules</p>
-              <p>Institure Newseltter</p>
-              <p>Educational Programmes</p>
-              <p>PhD Seminar</p>
-            </div> */}
+          <div className="flex lg:w-1/2 w-full pt-8 pb-4 px-10 lg:ml-8 justify-center">
             <div className=" w-full">
               <h3 className="text-3xl text-white font-semibold">Let's talk</h3>
               <p className="text-lg text-white mt-2 sm:pb-0">
-              Whether you’re looking to enhance campus resources, improve student experiences, or bring a unique initiative to life, we value your input. Share your feedback with us—we’re here to listen and make positive changes together!
+                Whether you’re looking to enhance campus resources, improve
+                student experiences, or bring a unique initiative to life, we
+                value your input. Share your feedback with us—we’re here to
+                listen and make positive changes together!
               </p>
               {/* ref={formRef}  */}
               <form
@@ -143,7 +137,7 @@ function Footer() {
 
                 <label className="space-y-3">
                   <span className="text-lg">
-                    <b>Email address</b>{" "}
+                    <b>Email address</b>
                   </span>
                   <input
                     type="email"
@@ -172,7 +166,7 @@ function Footer() {
                 </label>
                 {/* disabled={loading} */}
                 <button
-                  className=" px-5 py-2 min-h-12 rounded-lg shadow-lg shadow-gray-500 shadow-2xl flex justify-center items-center text-lg text-white gap-3"
+                  className=" px-5 py-2 min-h-12 rounded-lg shadow-md shadow-gray-500 flex justify-center items-center text-lg text-white gap-3"
                   type="submit"
                 >
                   {loading ? "Sending..." : "Send Message"}
@@ -182,10 +176,10 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" bg-gray-800 h-16 flex items-center text-gray-400 justify-between px-6">
+        <div className=" bg-gray-800 py-2 lg:flex-row flex flex-col items-center text-gray-400 justify-between px-6">
           <div>
             Copyright &#169; 2024 MGM's College of Engineering &amp; Technology
-            ,Navi Mumbai. All Rights Reserved.{" "}
+            ,Navi Mumbai. All Rights Reserved.
           </div>
           <div>Developed &amp; Maintained by MGMCET,Navi Mumbai</div>
         </div>
