@@ -13,6 +13,36 @@ body {
   @apply font-inter;
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* Change arrow color
+.slick-prev::before,
+.slick-next::before {
+  color: red !important; /* Change 'red' to your preferred color 
+} */
+
+
+.slick-prev,
+.slick-next {
+  background-color: white !important; /* Change arrow background to blue */
+  border-radius: 50%; /* Makes the background circular */
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: rgb(79, 75, 75) !important; /* Change arrow color to white */
+  font-size: 20px;
+}
+
+
+
 @layer components {
   .sub-menu {
     @apply z-50 text-white  absolute top-[11.5rem] space-y-4 py-[18px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-blue-700/50;

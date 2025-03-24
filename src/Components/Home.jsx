@@ -9,8 +9,8 @@ function Home() {
   return (
     <>
       <NavbarVidio />
-      <Programs />
       <About />
+      <Programs />
       <Campus />
       <Testimonial />
     </>
