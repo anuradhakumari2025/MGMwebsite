@@ -70,9 +70,22 @@ function DesktopMenu({ menu }) {
               <div key={idx} className="cursor-pointer">
                 <div className="group/menubox">
                   <div className="group-hover/menubox:bg-white hover:text-black px-6 py-2 duration-300">
-                  <Link to={subMenu.path || "#"}>
-                  <h6>{subMenu?.name}</h6>
-                  </Link>
+                  {subMenu.name === "Contact" ? (
+                      <Link to="#footer">
+                        <h6
+                        onClick={() => {
+                          const footerElement = document.getElementById("footer");
+                          if (footerElement) {
+                            footerElement.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }}
+                        >{subMenu?.name}</h6>
+                      </Link>
+                    ) : (
+                      <Link to={subMenu.path || "#"}>
+                        <h6>{subMenu?.name}</h6>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
