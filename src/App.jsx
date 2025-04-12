@@ -21,6 +21,9 @@ import VisionMission from "./Components/About/VisionMission";
 import CodeOfConduct from "./Components/About/CodeOfConduct";
 import StudentActivity from "./Components/StudentActivity";
 import Alumni from "./Components/Alumni";
+import AcademicCalender from "./Components/Academics/AcademicCalender";
+import Contact from "./Components/Contact/Contact";
+import FeeStructure from "./Components/Admission/FeeStructure";
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
           <Route path="/about/trustee-msg" element={<TrusteeMsg />} />
           <Route path="/about/vision-mission" element={<VisionMission />} />
           <Route path="/about/code-of-conduct" element={<CodeOfConduct />} />
+
+          {/* Academics */}
+          <Route path="/academics/calendar" element={<AcademicCalender />} />
 
           {/* Departments */}
           <Route path="/departments" element={<Departments />} />
@@ -77,11 +83,19 @@ function App() {
           {/* Campus */}
           <Route path="/campus" element={<CampusLife />} />
 
+          {/* Admission */}
+          <Route path="/admission/fee-structure" element={<FeeStructure />} />
+
           {/* Students Activity */}
           <Route path="/students-activity" element={<StudentActivity />} />
 
           {/* Alumni */}
           <Route path="/alumni" element={<Alumni />} />
+
+          {/* Contact */}
+          <Route path="/contact" element={<Contact />} />
+
+          {/* 404 Not Found */}
         </Routes>
         <Footer />
       </>

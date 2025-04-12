@@ -75,7 +75,7 @@ export const Menus = [
     path: "/admission",
     subMenu: [
       {
-        name: "Enterprise",
+        name: "Fee Structure",path:'/admission/fee-structure'
       },
       {
         name: "Collaboration",
@@ -97,6 +97,6 @@ export const Menus = [
   },
   {
     name: "Contact",
-    // path: "/contact",
+    path: "/contact",
   },
 ];

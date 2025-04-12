@@ -29,7 +29,7 @@ function MobMenu({ Menus }) {
     },
   };
   return (
-    <div className="items-center">
+    <div className="items-center relative">
       <button className="relative z-50 " onClick={toggleDrawer}>
         {isOpen ? (
           <RxCross1 className="font-bold text-2xl" />
@@ -38,7 +38,7 @@ function MobMenu({ Menus }) {
         )}
       </button>
       <motion.div
-        className="absolute left-0 right-0 top-[56vh] overflow-y-auto h-full bg-blue-700/50 backdrop-blur text-white  p-6 z-50 border-[1px] border-black duration-300"
+        className="absolute left-0 right-0 top-[61vh] overflow-y-auto h-full bg-blue-700/50 backdrop-blur text-white  p-6 z-50 border-[1px] border-black duration-300"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >

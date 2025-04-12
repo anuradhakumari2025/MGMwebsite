@@ -12,6 +12,7 @@ const Campus = () => {
 
   const handleRedirect = () => {
     navigate("/campus"); // Redirect to the new page
+    window.scrollTo(0, 0)
   };
   return (
     <>

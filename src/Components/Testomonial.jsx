@@ -86,7 +86,7 @@ const cardData = [
   {
     id: 4,
     name: "Sara Lee",
-    img: "https://via.placeholder.com/150",
+    img: "https://media.istockphoto.com/id/2148790198/photo/happy-young-college-students-with-books-on-yellow-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=QJHn5uc4eYzBAW4aUIkb6N7T0xOicb11PP7u-QZzEm4=",
     review: "It met all my expectations. Worth the price!",
   },
   {
@@ -98,31 +98,31 @@ const cardData = [
   {
     id: 6,
     name: "Emily Davis",
-    img: "https://via.placeholder.com/150",
+    img: "https://media.istockphoto.com/id/1139495117/photo/facing-my-future-with-confidence.webp?a=1&b=1&s=612x612&w=0&k=20&c=lBocBzbPCNM6odnrAs4AwWomPRnuuJUhsnqJADxu2ms=",
     review: "I loved it! Definitely would recommend to my friends.",
   },
   {
     id: 7,
     name: "Chris Brown",
-    img: "https://via.placeholder.com/150",
+    img: "https://media.istockphoto.com/id/1301397300/photo/portrait-of-young-woman-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=XG6nU_rotIAu50DbEy-Go0UnpvhsghPpvShkBmV7Ux4=",
     review: "Not bad, but I expected better features for the price.",
   },
   {
     id: 8,
     name: "Megan Harris",
-    img: "https://via.placeholder.com/150",
+    img: "https://media.istockphoto.com/id/2012565290/photo/portrait-of-female-college-student-holding-books-and-looking-at-the-camera-with-a-smile.webp?a=1&b=1&s=612x612&w=0&k=20&c=xlzbzytPUGoNjWNvObYwDR58eqkngFx9WgUv9GF9aok=",
     review: "Great value for money. Would buy again.",
   },
   {
     id: 9,
     name: "Luke Miller",
-    img: "https://via.placeholder.com/150",
+    img: "https://media.istockphoto.com/id/578811112/photo/smiling-female-young-college-student-of-indian-ethnicity.webp?a=1&b=1&s=612x612&w=0&k=20&c=BTDgPol9yGArP6-8ix5r04Fsx79hfM2XF_XZegS28ak=",
     review: "Fantastic! Exceeded all my expectations.",
   },
   {
     id: 10,
     name: "Olivia Martinez",
-    img: "https://via.placeholder.com/150",
+    img: "https://images.unsplash.com/photo-1710438595814-5e6811869347?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbGxlZ2UlMjBzdHVkZW50JTIwcGhvdG9zfGVufDB8fDB8fHww",
     review: "Good product, but not as described. Could use some improvements.",
   },
 ];

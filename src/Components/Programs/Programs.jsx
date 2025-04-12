@@ -16,7 +16,7 @@ const Programs = () => {
       <div className="programs bg-white">
         <div className="program bg-white">
           <img src={program1} alt="" />
-          <Link to={"/departments"}>
+          <Link to={"/departments"} onClick={() => window.scrollTo(0, 0)}>
             <div className="caption">
               <img src={program_icon_1} alt="" />
               <p>Graduation Degree</p>
@@ -25,7 +25,7 @@ const Programs = () => {
         </div>
         <div className="program">
           <img src={program2} alt="" />
-          <Link to={"/departments"}>
+          <Link to={"/departments"} onClick={() => window.scrollTo(0, 0)}>
             <div className="caption">
               <img src={program_icon_2} alt="" />
               <p>Masters Degree</p>
@@ -34,7 +34,7 @@ const Programs = () => {
         </div>
         <div className="program">
           <img src={program3} alt="" />
-          <Link to={"/departments"}>
+          <Link to={"/departments"} onClick={() => window.scrollTo(0, 0)}>
             <div className="caption">
               <img src={program_icon_3} alt="" />
               <p>Post Graduation</p>
