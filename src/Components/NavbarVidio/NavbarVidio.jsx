@@ -42,11 +42,11 @@ export default class NavbarVidio extends Component {
     { key: uuidv4(), content: <img src="/clg6.jpeg" alt="1" /> },
     { key: uuidv4(), content: <img src="/clg1.jpeg" alt="2" /> },
     { key: uuidv4(), content: <img src="/clg4.jpeg" alt="3" /> },
-    { key: uuidv4(), content: <img src="https://picsum.photos/800/500/?random" alt="4" /> },
+    { key: uuidv4(), content: <img src="/clg7.jpeg" alt="4" /> },
     { key: uuidv4(), content: <img src="/clg3.jpeg" alt="5" /> },
     { key: uuidv4(), content: <img src="/clg2.jpeg" alt="6" /> },
     { key: uuidv4(), content: <img src="/clg5.jpeg" alt="7" /> },
-    { key: uuidv4(), content: <img src="https://picsum.photos/805/800/?random" alt="8" /> }
+    { key: uuidv4(), content: <img src="/clg8.jpeg" alt="8" /> }
   ].map((slide, index) => {
     return { ...slide };
   });
@@ -56,7 +56,7 @@ export default class NavbarVidio extends Component {
       this.setState(prevState => ({
         goToSlide: (prevState.goToSlide + 1) % this.slides.length
       }));
-    }, 3000);
+    }, 2000);
   }
 
   componentWillUnmount() {
@@ -67,7 +67,7 @@ export default class NavbarVidio extends Component {
     return (
     <>
     <hr/>
-      <div className="max-w-5xl h-[500px] mx-auto px-8 py-8">
+      <div className="max-w-5xl h-[500px] mx-auto px-8 py-8 transition-all duration-300">
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}

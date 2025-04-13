@@ -49,36 +49,22 @@ function App() {
           <Route path="/academics/calendar" element={<AcademicCalender />} />
 
           {/* Departments */}
-          <Route path="/departments" element={<Departments />} />
-          <Route
-            path="/departments/undergraduate/computer"
-            element={<ComputerEng />}
-          />
-          <Route
-            path="/departments/undergraduate/civil"
-            element={<CivilEngg />}
-          />
-          <Route
-            path="/departments/undergraduate/mechanical"
-            element={<Mechanical />}
-          />
-          <Route
-            path="/departments/undergraduate/electrical"
+          <Route path="/departments" element={<Departments />}>
+            <Route path="undergraduate/computer" element={<ComputerEng />} />
+            <Route path="undergraduate/civil" element={<CivilEngg />} />
+            <Route path="undergraduate/mechanical" element={<Mechanical />} />
+            {/* <Route
+            path="undergraduate/electrical"
             element={<ElectricalEng />}
-          />
-          <Route
-            path="/departments/undergraduate/biomedical"
-            element={<BiomedicalEngg />}
-          />
-          <Route path="/departments/undergraduate/it" element={<ItEngg />} />
-          <Route
-            path="/departments/undergraduate/chemical"
-            element={<ChemicalEngg />}
-          />
-          <Route
-            path="/departments/undergraduate/extc"
-            element={<ExtcEngg />}
-          />
+          /> */}
+            <Route
+              path="undergraduate/biomedical"
+              element={<BiomedicalEngg />}
+            />
+            <Route path="undergraduate/it" element={<ItEngg />} />
+            <Route path="undergraduate/chemical" element={<ChemicalEngg />} />
+            <Route path="undergraduate/extc" element={<ExtcEngg />} />
+          </Route>
 
           {/* Campus */}
           <Route path="/campus" element={<CampusLife />} />
@@ -95,7 +81,6 @@ function App() {
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
 
-          {/* 404 Not Found */}
         </Routes>
         <Footer />
       </>

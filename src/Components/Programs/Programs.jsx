@@ -13,9 +13,9 @@ const Programs = () => {
   return (
     <>
       <Title title={"What We Offer"} subTitle={"OUR PROGRAM"} />
-      <div className="programs bg-white">
-        <div className="program bg-white">
-          <img src={program1} alt="" />
+      <div className="bg-white max-w-6xl w-full mx-auto my-4 grid sm:grid-cols-1 lg:grid-cols-3 lg:px-0 px-12  md:grid-cols-2 gap-10">
+        <div className="program hover:scale-105">
+          <img src={program1} alt="" className="rounded-xl block"/>
           <Link to={"/departments"} onClick={() => window.scrollTo(0, 0)}>
             <div className="caption">
               <img src={program_icon_1} alt="" />
@@ -23,8 +23,8 @@ const Programs = () => {
             </div>
           </Link>
         </div>
-        <div className="program">
-          <img src={program2} alt="" />
+        <div className="program hover:scale-105">
+          <img src={program2} alt=""  className="rounded-xl block"/>
           <Link to={"/departments"} onClick={() => window.scrollTo(0, 0)}>
             <div className="caption">
               <img src={program_icon_2} alt="" />
@@ -32,8 +32,8 @@ const Programs = () => {
             </div>
           </Link>
         </div>
-        <div className="program">
-          <img src={program3} alt="" />
+        <div className="program hover:scale-105">
+          <img src={program3} alt=""  className="rounded-xl block"/>
           <Link to={"/departments"} onClick={() => window.scrollTo(0, 0)}>
             <div className="caption">
               <img src={program_icon_3} alt="" />

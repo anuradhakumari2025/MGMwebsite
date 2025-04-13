@@ -53,16 +53,16 @@ export const Menus = [
     subMenu: [
       {
         name: "UnderGraduate",
-        path: "/departments",
+        path: "/departments/undergraduate/biomedical",
       },
       {
         name: "PostGraduate",
         path: "/departments",
       },
-      {
-        name: "PHD Courses",
-        path: "/departments",
-      },
+      // {
+      //   name: "PHD Courses",
+      //   path: "/departments",
+      // },
     ],
   },
   {

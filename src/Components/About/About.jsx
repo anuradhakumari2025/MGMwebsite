@@ -25,7 +25,7 @@ const About = () => {
               Nurturing Tomorrow's Leaders Today
             </h2>
           </div>
-          <p className="text-jusitfy my-5">
+          <p className="text-jusitfy my-5 md:text-base lg:text-base text-sm ">
             MGM's College of Engineering and Technology(MGMCET) is governed by
             Mahatma Gandhi Mission, a Charitable Trust Act 1950 and Societies
             Regulation Act 1860. Since its inception in 1982, Mahatma Gandhi

@@ -1,69 +1,66 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 function Departments() {
+  const underGradDepts = [
+    { name: "BioMedical Engineering", path: "biomedical" },
+    { name: "Chemical Engineering", path: "chemical" },
+    { name: "Computer Engineering", path: "computer" },
+    { name: "Civil Engineering", path: "civil" },
+    // { name: " Electrical Engineering", path: " electrical" },
+    { name: "Electronics and Telecommunication Engineering", path: "extc" },
+    { name: "Infromation and Telecommunication Engineering", path: "it" },
+    { name: " Mechanical", path: "mechanical" },
+  ];
+  const postGradDepts = [
+    { name: "BioMedical Engineering" },
+    { name: "Chemical Engineering" },
+    { name: "Civil Engineering" },
+  ];
   return (
     <>
       <hr />
-      <div className="w-full max-w-5xl my-6 mx-auto lg:px-0 px-24">
-        <ol className="list-disc space-y-4 ">
-          <li className="font-bold text-xl">
-            <Link to="/departments" className="hover:text-blue-500">
-              UnderGraduate
-            </Link>
-            <ol className="list-decimal ml-5 my-2 font-normal text-[16px]">
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/biomedical">
-                  BioMedical Engineering
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/chemical">
-                  Chemical Engineering{" "}
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/computer">
-                  Computer Engineering
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/civil">
-                  Civil Engineering
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/electrical">
-                  Electrical Engineering
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/extc">
-                  Electronics and Telecommunication Engineering
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/it">
-                  Infromation and Telecommunication Engineering
-                </Link>
-              </li>
-              <li className="hover:text-blue-600">
-                <Link to="/departments/undergraduate/mechanical">
-                  Mechanical Engineering
-                </Link>
-              </li>
-            </ol>
-          </li>
-          <li className="font-bold text-xl">
-            PostGraduate
-            <ol className="list-decimal ml-5 my-2 font-normal text-[16px]">
-              <li>BioMedical Engineering</li>
-              <li>Chemical Engineering</li>
-              <li>Civil Engineering</li>
-            </ol>
-          </li>
-          <li className="font-bold text-xl">PHD Courses</li>
-        </ol>
+      <div className="flex pt-6">
+        <div className="lg:w-[300px] bg-ambr-400 pl-4">
+          <div className="lg:space-y-4 ">
+            <div className="font-bold lg:text-xl text-base">
+              <p className="text-blue-800">UnderGraduate</p>
+              <div className="ml-3 my-4 font-normal lg:text-[18px] text-sm">
+                {underGradDepts.map((dept, idx) => (
+                  <div key={idx} className="hover:text-blue-600">
+                    <NavLink
+                      to={`/departments/undergraduate/${dept.path}`}
+                      className={({ isActive }) =>
+                        `flex items-center gap-2 py-4 pl-2 cursor-pointer  duration-200 ${
+                          isActive
+                            ? "border-r-4 md:border-r-[6px] border-blue-600 bg-blue-600/20 text-blue-600"
+                            : "hover:bg-blue-200/90 border-white"
+                        }`
+                      }
+                    >
+                      {dept.name}
+                    </NavLink>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Post Graduate */}
+            <div className="font-bold lg:text-xl text-base">
+              <p className="text-blue-800">PostGraduate</p>
+              <div className=" ml-3 my-2 space-y-3 font-normal lg:text-[18px] text-sm">
+                {postGradDepts.map((dept, idx) => (
+                  <div className="" key={idx}>
+                    <NavLink>{dept.name}</NavLink>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* <li className="font-bold text-xl">PHD Courses</li> */}
+          </div>
+        </div>
+        <Outlet />
       </div>
     </>
   );

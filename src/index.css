@@ -80,7 +80,7 @@ body {
   font-size: 4vw;
   color: transparent;
   background: linear-gradient(to right, orange, orangered);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   position: absolute;
   opacity: 0;
   animation: load 1s linear forwards;
