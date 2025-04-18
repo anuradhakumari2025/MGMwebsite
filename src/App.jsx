@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Head from "./Components/Head";
 import Navbar from "./Components/Navbar";
+import { Toaster } from "react-hot-toast"; // Import Toaster
 import Footer from "./Components/Footer";
 import CampusLife from "./Components/CampusLife";
 import Departments from "./Components/Departments/Departments";
@@ -31,6 +32,7 @@ function App() {
       <>
         <Head />
         <Navbar />
+        <Toaster/>
         {/* Main content where routes will change */}
         <Routes>
           <Route path="/" element={<Home />} />

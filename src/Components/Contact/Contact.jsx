@@ -1,4 +1,5 @@
 import React from "react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const deptNumber = [
@@ -43,6 +44,13 @@ const Contact = () => {
       teacher: "Prof. Rajesh Kadu",
     },
   ];
+
+  const handleCopy = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => toast.success("Copied to clipboard!"))
+      .catch(() => toast.error("Failed to copy"));
+  };
   return (
     <div className="border">
       <div className="max-w-4xl mx-auto py-4">
@@ -52,22 +60,42 @@ const Contact = () => {
         <div className="space-y-1 mb-6">
           <h2 className="font-semibold">
             Office Phone Number: <span className="">Ph:</span>
-            <span className="font-normal">(022)-27433403.</span>
+            <span
+              className="font-normal cursor-pointer"
+              onClick={(e) => handleCopy(e.target.innerText)}
+            >
+              (022)-27433403.
+            </span>
           </h2>
           <h2 className="font-semibold">
             E-mail:
-            <span className="font-normal">director@mgmmumbai.ac.in</span>
+            <span
+              className="font-normal cursor-pointer"
+              onClick={(e) => handleCopy(e.target.innerText)}
+            >
+              director@mgmmumbai.ac.in
+            </span>
           </h2>
         </div>
 
         <div className="space-y-1 mb-6">
           <h2 className="font-semibold">
             Admission Phone Number: <span className="">Ph:</span>
-            <span className="font-normal">(022)-65138119.</span>
+            <span
+              className="font-normal cursor-pointer"
+              onClick={(e) => handleCopy(e.target.innerText)}
+            >
+              (022)-65138119.
+            </span>
           </h2>
           <h2 className="font-semibold">
             E-mail:
-            <span className="font-normal">director@mgmmumbai.ac.in</span>
+            <span
+              className="font-normal cursor-pointer"
+              onClick={(e) => handleCopy(e.target.innerText)}
+            >
+              director@mgmmumbai.ac.in
+            </span>
           </h2>
         </div>
 
@@ -77,11 +105,21 @@ const Contact = () => {
           </h1>
           <h3 className="font-semibold">
             Prof. Sanjay Jadhav (TPO): <span>Ph:</span>
-            <span className="font-normal">+91 97020 08500</span>
+            <span
+              className="font-normal cursor-pointer"
+              onClick={(e) => handleCopy(e.target.innerText)}
+            >
+              +91 97020 08500
+            </span>
           </h3>
           <h3 className="font-semibold">
             Yogesh Karpe (Assistant TPO): <span>Ph:</span>
-            <span className="font-normal">+91 99605 90188</span>
+            <span
+              className="font-normal cursor-pointer"
+              onClick={(e) => handleCopy(e.target.innerText)}
+            >
+              +91 99605 90188
+            </span>
           </h3>
         </div>
 
@@ -96,7 +134,12 @@ const Contact = () => {
                 </p>
                 <p className="pl-4">
                   <span>&nbsp;Ph:</span>
-                  <span className="font-normal">&nbsp;{dept.number}</span>
+                  <span
+                    className="font-normal cursor-pointer"
+                    onClick={(e) => handleCopy(e.target.innerText)}
+                  >
+                    &nbsp;{dept.number}
+                  </span>
                 </p>
               </li>
             ))}
