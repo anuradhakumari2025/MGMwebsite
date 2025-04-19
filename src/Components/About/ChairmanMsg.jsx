@@ -27,7 +27,7 @@ function ChairmanMsg() {
             placement of graduate engineers of institutes in different
             industrial organisations, we play our role in nation building. We
             hope these young engineers will create a difference in the Indian
-            and Global Scenario.{" "}
+            and Global Scenario.
           </p>
         </div>
       </div>

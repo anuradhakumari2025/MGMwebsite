@@ -25,6 +25,7 @@ import Alumni from "./Components/Alumni";
 import AcademicCalender from "./Components/Academics/AcademicCalender";
 import Contact from "./Components/Contact/Contact";
 import FeeStructure from "./Components/Admission/FeeStructure";
+import Placement from "./Components/Placement/Placement";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* About */}
+          <Route path="/about" element={<VisionMission />} />
           <Route path="/about/chairman-msg" element={<ChairmanMsg />} />
           <Route
             path="/about/vice-principal-msg"
@@ -48,6 +50,7 @@ function App() {
           <Route path="/about/code-of-conduct" element={<CodeOfConduct />} />
 
           {/* Academics */}
+          <Route path="/academics" element={<AcademicCalender />} />
           <Route path="/academics/calendar" element={<AcademicCalender />} />
 
           {/* Departments */}
@@ -73,6 +76,9 @@ function App() {
 
           {/* Admission */}
           <Route path="/admission/fee-structure" element={<FeeStructure />} />
+
+          {/* Placements */}
+          <Route path="/placements" element={<Placement/>}/>
 
           {/* Students Activity */}
           <Route path="/students-activity" element={<StudentActivity />} />

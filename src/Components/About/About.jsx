@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./About.css";
 import about_img from "/about.png";
 import play_icon from "/play-icon.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
   const [showMore, setShowMore] = useState(false); // State to toggle visibility
@@ -9,9 +11,41 @@ const About = () => {
   const handleReadMore = () => {
     setShowMore(!showMore); // Toggle the state
   };
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      var tl2 = gsap.timeline({
+            scrollTrigger:{
+              trigger:'.section',
+              scroller:'body',
+              // markers:true,
+              start:'top 75%',
+              end:'top 10%',
+              scrub:2
+            }
+          })
+         
+          tl2.from('.heading',{
+            y:-100,
+            opacity:0,
+            duration:1,
+            ease:"power3.out"
+          })
+          tl2.from('.subHeading',{
+            x:-350,
+            opacity:0,
+            duration:1,
+            ease:"power3.out"
+          })
+     
+    });
+  
+    return () => ctx.revert(); // Cleanup GSAP context on component unmount
+  }, []);
   return (
-    <>
-      <h3 className="text-3xl font-bold py-4 text-center text-[#212ea0]">
+    <div className="section">
+      <h3 className="text-3xl font-bold py-4 pt-12 text-center text-[#212ea0] heading">
         ABOUT US
       </h3>
       <div className="max-w-7xl mx-auto w-full px-16 mb-8">
@@ -21,7 +55,7 @@ const About = () => {
         </div>
         <div className="about-right">
           <div>
-            <h2 className="text-[#000f38] lg:text-[35px] text-[25px] font-[700]">
+            <h2 className="text-[#000f38] lg:text-[35px] text-[25px] font-[700] subHeading">
               Nurturing Tomorrow's Leaders Today
             </h2>
           </div>
@@ -71,7 +105,7 @@ const About = () => {
           {showMore ? "Read Less..." : "Read More..."}
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
